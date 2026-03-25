@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/016180071c.js" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <header class=" bg-[var(--primary-color)]">
+        <div class="lg:hidden py-4 px-8 flex gap-2">
+            <!-- <i class="fa-solid fa-bars text-[var(--white-color)] lg:hidden"></i> -->
+            <a href="#home"><i class="fa-solid fa-house text-white text-lg"></i></a>
+            <a href="#sobre-mim"><i class="fa-solid fa-circle-user text-white text-lg"></i></a>
+            <a href="#projetos"><i class="fa-solid fa-diagram-project text-white text-lg"></i></a>
+            <a href="#habilidades"><i class="fa-brands fa-node-js text-white text-lg   "></i></a>
+            <a href="#fale-comigo"><i class="fa-brands fa-whatsapp text-white  text-lg"></i></a>
+            <a href="#mais-info"><i class="fa-solid fa-circle-info text-white  text-lg"></i></a>
+        </div>
+        <div class="lg:flex lg:justify-between lg:items-center lg:py-4 lg:px-8 hidden">
+            <div class="gap-1 text-[var(--white-color)] flex items-center justify-center">
+                <!-- <img width="100px" src="" alt="Logotipo"> -->
+                <i class="fa-brands fa-dev text-4xl"></i>
+                <label>Thiago Viana</label>
+            </div>
+            <nav class="flex justify-center items-center">
+                <ul class="flex justify-between items-center gap-10 text-[var(--white-color)]">
+                    <li class="gap-2"><a href="#home">Home</a></li>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#fale-comigo">Fale comigo</a></li>
+                    <li><a href="#mais-info">Mais informações</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home"
+            class="bg-[var(--primary-color)] text-[var(--white-color)] shadow-[4px_0px_24px_rgba(0,0,0,0.3)]">
+            <div class=" flex flex-col items-center justify-center lg:flex-row  gap-8 p-8">
+                <img class="rounded-full w-50 lg:w-[300px]"
+                    src="https://media.licdn.com/dms/image/v2/C4E03AQHPGKyUOmWhWw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1621291631958?e=1775692800&v=beta&t=DI6FN364FqKTOi6N6mCF36OyJuK2BrQdGo6Dk21p2c4"
+                    alt="Minha foto de perfil">
+                <div class=" flex flex-col justify-center items-center">
+                    <h1 class="lg:text-8xl text-5xl font-light text-center">Thiago Viana</h1 class="text-6xl">
+
+                    <h2 class="lg:text-5xl text-3xl mt-4 text-center">Full Stack Developer </h2>
+                    <div class="flex gap-4 mt-6">
+                        <button class="button_header">
+                            <img width="16" src="./download-icon.svg" alt="">
+                            <label class="ml-2">Baixar CV</label>
+                        </button>
+                        <button class="button_header">
+                            <img width="16" src="./whatsapp-icon.svg" alt="">
+                            <label class="ml-2">Fale comigo</label>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="main-context-presentation-sentence">
+                <label> Construindo e transformando códigos em soluções reais,
+                    em um mundo digital, dinâmico e conectado. .</label>
+            </div> -->
+        </section>
+
+
+        <section id="sobre-mim" class="flex flex-col px-4 mt-6 ">
+            <h1 class="text-4xl font-light">Sobre mim</h1>
+            <div class="flex flex-col lg:flex-row ">
+                <div
+                    class="bg-[#010F22] text-[var(--white-color)] rounded-md  relative text-lg  m-10 gap-7 flex flex-col items-center justify-center h-[500px] lg:text-lg lg:w-1/2  ">
+
+                    <div class="h-9  w-full bg-[#010421] absolute top-0  rounded-t-xl  flex justify-between ">
+                        <div class="flex justify-between items-center w-full px-5">
+                            <div class="flex items-center gap-3">
+                                <div class="flex">
+                                    <ul class="flex items-center gap-2">
+                                        <li class="h-3 w-3 bg-[#FF5F56] rounded-full"></li>
+                                        <li class="h-3 w-3 bg-[#FFBD2E] rounded-full"></li>
+                                        <li class="h-3 w-3 bg-[#27C93F] rounded-full"></li>
+                                    </ul>
+                                </div>
+                                <p class="text-sm text-white opacity-50"> description.js</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-x text-sm"></i>
+                            </div>
+                        </div>
+                        <div class="h-px w-full bg-[#29292F] absolute bottom-0"></div>
+                    </div>
+
+                    <div class="overflow-y-auto py-10 px-10">
+                        <p class="text-justify">Desde que conheci o mundo da programação no
+                            ensino médio, nunca mais parei. Entre muita teoria e prática e linguagens diferentes,
+                            consegui
+                            me encontrar no desenvolvimento web com Javascript, pretendendo
+                            alçar voos mais altos e longos com ela.</p>
+
+                        <p class="text-justify">Sou graduado em Ciência da computação e atualmente estou cursando uma
+                            especialização em Desenvolvimento Web pelo IFBA e uma especialização em Engenharia DevOps
+                            EAD
+                            pelo IFMT. Tenho experiência em trabalhar com Angular, Ionic e Vue.Js. Também possuo
+                            conhecimentos em React.Js e React Native</p>
+                    </div>
+
+                    <div
+                        class="h-7  w-full bg-[#007ACC] absolute bottom-0  rounded-b-md flex justify-between items-center text-sm px-5">
+                        <p>UTF-8</p>
+                        <p>JavaScript</p>
+
+                    </div>
+
+                </div>
+
+                <div
+                    class="bg-[#010F22] text-[var(--white-color)] rounded-md  relative text-lg px-10 m-10 gap-7 flex flex-col items-center justify-center h-[500px] lg:w-1/2 lg:text-xl">
+
+                    <div class="h-9  w-full bg-[#010421] absolute top-0  rounded-t-xl  flex justify-between ">
+                        <div class="flex justify-between items-center w-full px-5">
+                            <div class="flex items-center gap-3">
+                                <div class="flex">
+                                    <ul class="flex items-center gap-2">
+                                        <li class="h-3 w-3 bg-[#FF5F56] rounded-full"></li>
+                                        <li class="h-3 w-3 bg-[#FFBD2E] rounded-full"></li>
+                                        <li class="h-3 w-3 bg-[#27C93F] rounded-full"></li>
+                                    </ul>
+                                </div>
+                                <p class="text-sm text-white opacity-50"> profile.js</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-x text-sm"></i>
+                            </div>
+                        </div>
+                        <div class="h-px w-full bg-[#29292F] absolute bottom-0"></div>
+                    </div>
+
+                    <p class="text-justify">Em desenvolvimento ;D</p>
+
+
+
+                    <div
+                        class="h-7  w-full bg-[#007ACC] absolute bottom-0  rounded-b-md flex justify-between items-center text-sm px-5">
+                        <p>UTF-8</p>
+                        <p>JavaScript</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="flex flex-col px-10 gap-4 bg-[var(--primary-color)] text-[var(--white-color)] py-20">
+            <h1 id="projetos"  class="text-4xl font-light">Projetos</h1>
+            <div class="flex flex-col justify-center  lg:flex-row gap-10 text-[var(--white-color)] mt-10">
+          
+               <div class="  flex flex-col bg-[#010F22] rounded-xl p-4 gap-4 border border-[var(--white-color)]  px-8">
+                    <h1 class="text-xl font-bold">Nexboard Studio</h1>
+                    <h2 class="text-sm">Editor de vídeos com avatar virtual</h2>
+                    <img class=" bg-red-500" src="./image.png" alt="Imagem do projeto">
+                    <div class="h-px w-full bg-[#29292F] "></div>
+                    <div class="flex justify-between text-sm">
+                        <div class="flex items-center justify-center gap-2 ">
+                            <i class="fa-regular fa-calendar"></i>
+                           <p> Data de conclusão: 01/01/2023</p>
+                        </div>
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-link"></i>
+                            <p>Visualizar</p>
+                        </div>
+                    </div>
+               </div>
+                <div class=" flex flex-col bg-[#010F22] rounded-xl p-4 gap-4 border border-[var(--white-color)]  px-8">
+                    <h1 class="text-xl font-bold">Forensics Module</h1>
+                    <h2 class="text-sm">Sistema de identificação de pessoas</h2>
+                    <img class=" bg-red-500 " src="./image2.png" alt="Imagem do projeto">
+                    <div class="h-px w-full bg-[#29292F] "></div>
+                    <div class="flex justify-between text-sm">
+                        <div class="flex items-center justify-center gap-2 ">
+                            <i class="fa-regular fa-calendar"></i>
+                           <p> Data de conclusão: 01/01/2023</p>
+                        </div>
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-link"></i>
+                            <p>Visualizar</p>
+                        </div>
+                    </div>
+               </div>
+                <div class=" flex flex-col bg-[#010F22] rounded-xl p-4 gap-4 border border-[var(--white-color)]  px-8">
+                    <h1 class="text-xl font-bold">The Livery App</h1>
+                    <h2 class="text-sm">Aplicativo de comida em Vitória da Conquista - BA</h2>
+                    <img  class=" bg-red-500" src="images3.jpg">
+                    <div class="h-px w-full bg-[#29292F] "></div>
+                    <div class="flex justify-between text-sm">
+                        <div class="flex items-center justify-center gap-2 ">
+                            <i class="fa-regular fa-calendar"></i>
+                           <p> Data de conclusão: 01/01/2023</p>
+                        </div>
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-link"></i>
+                            <p>Visualizar</p>
+                        </div>
+                    </div>
+               </div>
+               
+            </div>
+            <h1 id="habilidades" class="text-4xl font-light mt-10">Habilidades</h1>
+            <div class="flex flex-col lg:flex-row gap-4 text-[var(--white-color)] mt-10">
+                <div class="flex justify-around w-full">
+                    <div class="w-full flex">
+
+                        <div class="flex flex-col gap-4 items-center justify-center w-full">
+                            <p>Backend</p>
+                            <p
+                                class="bg-[#010F22] border border-white rounded-full text-center px-2 py-2.5 min-w-[40%]">
+                                Node
+                            </p>
+                            <p
+                                class="bg-[#010F22] border border-white rounded-full text-center px-2 py-2.5 min-w-[40%]">
+                                Nest</p>
+                            <p
+                                class="bg-[#010F22] border border-white rounded-full text-center px-2 py-2.5 min-w-[40%]">
+                                PostgreSQL</p>
+
+                        </div>
+
+                    </div>
+                    <div class="w-full flex">
+
+                        <div class="flex flex-col gap-4 items-center justify-center w-full">
+                            <p>Mobile</p>
+                            <p
+                                class="bg-[#010F22] border border-white rounded-full text-center px-2  py-2.5 min-w-[40%]">
+                                React Native
+                            </p>
+                            <p
+                                class="bg-[#010F22] border border-white rounded-full text-center px-2  py-2.5 min-w-[40%]">
+                                Ionic</p>
+                            <p
+                                class="bg-[#010F22] border border-white rounded-full text-center px-2  py-2.5 min-w-[40%]">
+                                Android</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex justify-around w-full">
+                    <div class="w-full flex">
+
+                        <div class="flex flex-col gap-4 items-center justify-center w-full">
+                            <p>Devops</p>
+                            <p
+                                class="bg-[#010F22] border border-white rounded-full text-center px-2 py-2.5 min-w-[40%] w-[40%]">
+                                AWS
+                            </p>
+                            <p
+                                class="bg-[#010F22] border border-white rounded-full text-center px-2 py-2.5 min-w-[40%] w-[40%]">
+                                CI/DI</p>
+                            <p
+                                class="bg-[#010F22] border border-white rounded-full text-center px-2 py-2.5 min-w-[40%] w-[40%]">
+                                Terraform</p>
+
+                        </div>
+
+                    </div>
+                    <div class="w-full flex">
+
+                        <div class="flex flex-col gap-4 items-center justify-center w-full">
+                            <p>Frontend</p>
+                            <p
+                                class="bg-[#010F22] border border-white rounded-full text-center px-2  py-2.5 min-w-[40%]">
+                                Vue
+                            </p>
+                            <p
+                                class="bg-[#010F22] border border-white rounded-full text-center px-2  py-2.5 min-w-[40%]">
+                                React</p>
+                            <p
+                                class="bg-[#010F22] border border-white rounded-full text-center px-2  py-2.5 min-w-[40%]">
+                                Angular</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fale-comigo" class="flex flex-col px-4 mt-4 justify-center items-center">
+            <h1 class="text-4xl font-light">Fale comigo</h1>
+            <div
+                class="bg-[var(--primary-color)] text-[var(--white-color)] px-10 m-10 gap-7 flex rounded-2xl h-[600px] w-full lg:h-[400px] justify-center">
+
+                <form class=" " action="/cadastro" method="POST" id="formCadastro">
+                    <div class="flex flex-col py-8 w-full  lg:grid lg:grid-cols-2 gap-4">
+                        <div>
+                            <label for="nome">Nome:</label>
+                            <input class="form_input" placeholder="Seu nome" type="text" id="nome" name="nome" required>
+                        </div>
+
+                        <div>
+                            <label for="email">Email:</label>
+                            <input class="form_input" placeholder="Seu email" type="email" id="email" name="email"
+                                required>
+                        </div>
+
+                        <div>
+                            <label for="telefone">Telefone:</label>
+                            <input class="form_input" placeholder="(33) 9 9999-9999" type="text" id="telefone"
+                                name="telefone" min="0" max="9999999999" required>
+                        </div>
+
+                        <div>
+                            <label for="nascimento">Data de Nascimento:</label>
+                            <input class="form_input" placeholder="Sua data de nascimento" type="date"
+                                name="nascimento">
+                        </div>
+
+
+                        <div>
+                            <label for="foto">Anexos:</label>
+                            <input class="form_input" placeholder="Escolha uma foto" type="file" name="foto"
+                                accept="image/*">
+                        </div>
+
+
+                        <div class="flex items-center gap-4 mt-4">
+                            <label class="text-lg" for="foto">Aceito os termos de uso:</label>
+                            <input placeholder="Aceito os termos de uso" type="radio">
+                        </div>
+
+                    </div>
+                    <div class="flex justify-center gap-5 w-full">
+                        <button class="form_button w-1/2" type="submit">Cadastrar</button>
+                        <button class="form_button w-1/2" type="reset">Limpar</button>
+                    </div>
+                </form>
+
+
+        </section>
+
+
+    </main>
+    <footer id="mais-info"
+        class="bg-[var(--primary-color)] text-[var(--white-color)] h-40 flex items-center justify-center flex-col">
+        <p>&copy; 2023 Meu Portfólio. Todos os direitos reservados.</p>
+        <div>
+            <p>Minhas redes sociais</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

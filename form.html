@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+
+<body>
+    <section class="main-context-form">
+        <div class="main-context-form-container">
+            <form action="/cadastro" method="POST" id="formCadastro">
+                <label for="nome">Nome:</label>
+                <input placeholder="Seu nome" type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input placeholder="Seu email" type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input placeholder="(33) 9 9999-9999" type="text" id="telefone" name="telefone" min="0" max="9999999999"
+                    required>
+
+                <label for="nascimento">Data de Nascimento:</label>
+                <input placeholder="Sua data de nascimento" type="date" name="nascimento">
+
+                <label for="foto">Foto de Perfil:</label>
+                <input placeholder="Escolha uma foto" type="file" name="foto" accept="image/*">
+
+                <div class="form-radio">
+                    <label for="foto">Confirmo a proposta:</label>
+                    <input placeholder="Confirmo a proposta" type="radio">
+                </div>
+
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

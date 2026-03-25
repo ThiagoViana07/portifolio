@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #12486B;
+    --secondary-color: #419197;
+    --tertiary-color: #78D6C6;
+    --white-color: #F5FCCD;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+.button_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--white-color);
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 10px 18px;
+}
+
+input:focus-visible {
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+.form_input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: var(--white-color);
+    color: black;
+}
+
+.form_button {
+    margin-top: 12px;
+    background-color: var(--white-color);
+    ;
+    color: black;
+    border: none;
+    padding: 10px 18px;
+    font-size: 16px;
+    border-radius: 4px;
+}
