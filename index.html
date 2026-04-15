@@ -15,15 +15,28 @@
 
 <body>
     <header class=" bg-[var(--primary-color)]">
-        <div class="lg:hidden py-4 px-8 flex gap-2">
+        <div class="lg:hidden py-4 px-8 flex gap-2 flex justify-between items-center">
             <!-- <i class="fa-solid fa-bars text-[var(--white-color)] lg:hidden"></i> -->
-            <a href="#home"><i class="fa-solid fa-house text-white text-lg"></i></a>
-            <a href="#sobre-mim"><i class="fa-solid fa-circle-user text-white text-lg"></i></a>
-            <a href="#projetos"><i class="fa-solid fa-diagram-project text-white text-lg"></i></a>
-            <a href="#habilidades"><i class="fa-brands fa-node-js text-white text-lg   "></i></a>
-            <a href="#fale-comigo"><i class="fa-brands fa-whatsapp text-white  text-lg"></i></a>
-            <a href="#mais-info"><i class="fa-solid fa-circle-info text-white  text-lg"></i></a>
+            <div>
+                <a href="#home"><i class="fa-solid fa-house text-white text-lg"></i></a>
+                <a href="#sobre-mim"><i class="fa-solid fa-circle-user text-white text-lg"></i></a>
+                <a href="#projetos"><i class="fa-solid fa-diagram-project text-white text-lg"></i></a>
+                <a href="#habilidades"><i class="fa-brands fa-node-js text-white text-lg   "></i></a>
+                <a href="#fale-comigo"><i class="fa-brands fa-whatsapp text-white  text-lg"></i></a>
+                <a href="#mais-info"><i class="fa-solid fa-circle-info text-white  text-lg"></i></a>
+            </div>
+            <div class="flex items-center justify-center gap-1">
 
+                <i class="fa-solid fa-sun text-white"></i>
+                <div class="relative inline-block w-11 h-5">
+                    <input id="switch-component" type="checkbox"
+                        class="peer appearance-none w-11 h-5 bg-slate-100 rounded-full checked:bg-slate-800 cursor-pointer transition-colors duration-300" />
+                    <label for="switch-component"
+                        class="absolute top-0 left-0 w-5 h-5 bg-white rounded-full border border-slate-300 shadow-sm transition-transform duration-300 peer-checked:translate-x-6 peer-checked:border-slate-800 cursor-pointer">
+                    </label>
+                </div>
+                <i class="fa-solid fa-moon text-white"></i>
+            </div>
         </div>
         <div class="lg:flex lg:justify-between lg:items-center lg:py-4 lg:px-8 hidden">
             <div class="gap-1 text-[var(--white-color)] flex items-center justify-center">
@@ -51,6 +64,7 @@
                     <li><a href="#habilidades">Habilidades</a></li>
                     <li><a href="#fale-comigo">Fale comigo</a></li>
                     <li><a href="#mais-info">Mais informações</a></li>
+
 
                 </ul>
             </nav>
