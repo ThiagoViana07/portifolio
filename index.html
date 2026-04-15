@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,9 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/016180071c.js" crossorigin="anonymous"></script>
+    <script type="module" src="./scripts/script.js" defer></script>
+    <script type="module" src="./scripts/camera.js" defer></script>
+
 </head>
 <link rel="stylesheet" href="style.css">
 
@@ -20,6 +23,7 @@
             <a href="#habilidades"><i class="fa-brands fa-node-js text-white text-lg   "></i></a>
             <a href="#fale-comigo"><i class="fa-brands fa-whatsapp text-white  text-lg"></i></a>
             <a href="#mais-info"><i class="fa-solid fa-circle-info text-white  text-lg"></i></a>
+
         </div>
         <div class="lg:flex lg:justify-between lg:items-center lg:py-4 lg:px-8 hidden">
             <div class="gap-1 text-[var(--white-color)] flex items-center justify-center">
@@ -29,12 +33,25 @@
             </div>
             <nav class="flex justify-center items-center">
                 <ul class="flex justify-between items-center gap-10 text-[var(--white-color)]">
+                    <div class="flex items-center justify-center gap-1">
+
+                        <i class="fa-solid fa-sun"></i>
+                        <div class="relative inline-block w-11 h-5">
+                            <input id="switch-component" type="checkbox"
+                                class="peer appearance-none w-11 h-5 bg-slate-100 rounded-full checked:bg-slate-800 cursor-pointer transition-colors duration-300" />
+                            <label for="switch-component"
+                                class="absolute top-0 left-0 w-5 h-5 bg-white rounded-full border border-slate-300 shadow-sm transition-transform duration-300 peer-checked:translate-x-6 peer-checked:border-slate-800 cursor-pointer">
+                            </label>
+                        </div>
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
                     <li class="gap-2"><a href="#home">Home</a></li>
                     <li><a href="#sobre-mim">Sobre mim</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
                     <li><a href="#fale-comigo">Fale comigo</a></li>
                     <li><a href="#mais-info">Mais informações</a></li>
+
                 </ul>
             </nav>
         </div>
@@ -43,20 +60,18 @@
         <section id="home"
             class="bg-[var(--primary-color)] text-[var(--white-color)] shadow-[4px_0px_24px_rgba(0,0,0,0.3)]">
             <div class=" flex flex-col items-center justify-center lg:flex-row  gap-8 p-8">
-                <img class="rounded-full w-50 lg:w-[300px]"
-                    src="https://media.licdn.com/dms/image/v2/C4E03AQHPGKyUOmWhWw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1621291631958?e=1775692800&v=beta&t=DI6FN364FqKTOi6N6mCF36OyJuK2BrQdGo6Dk21p2c4"
-                    alt="Minha foto de perfil">
+                <img class="rounded-full w-50 lg:w-[300px]" src="images/perfil.jpg" alt="Minha foto de perfil">
                 <div class=" flex flex-col justify-center items-center">
                     <h1 class="lg:text-8xl text-5xl font-light text-center">Thiago Viana</h1 class="text-6xl">
 
                     <h2 class="lg:text-5xl text-3xl mt-4 text-center">Full Stack Developer </h2>
                     <div class="flex gap-4 mt-6">
                         <button class="button_header">
-                            <img width="16" src="./download-icon.svg" alt="">
+                            <img width="16" src="./images/download-icon.svg" alt="">
                             <label class="ml-2">Baixar CV</label>
                         </button>
                         <button class="button_header">
-                            <img width="16" src="./whatsapp-icon.svg" alt="">
+                            <img width="16" src="./images/whatsapp-icon.svg" alt="">
                             <label class="ml-2">Fale comigo</label>
                         </button>
                     </div>
@@ -70,12 +85,12 @@
 
 
         <section id="sobre-mim" class="flex flex-col px-4 mt-6 ">
-            <h1 class="text-4xl font-light">Sobre mim</h1>
+            <h1 class="text-4xl font-light ">Sobre mim</h1>
             <div class="flex flex-col lg:flex-row ">
                 <div
                     class="bg-[#010F22] text-[var(--white-color)] rounded-md  relative text-lg  m-10 gap-7 flex flex-col items-center justify-center h-[500px] lg:text-lg lg:w-1/2  ">
 
-                    <div class="h-9  w-full bg-[#010421] absolute top-0  rounded-t-xl  flex justify-between ">
+                    <div class="h-9 w-full bg-[#010421] absolute top-0  rounded-t-xl  flex justify-between ">
                         <div class="flex justify-between items-center w-full px-5">
                             <div class="flex items-center gap-3">
                                 <div class="flex">
@@ -120,7 +135,7 @@
                 <div
                     class="bg-[#010F22] text-[var(--white-color)] rounded-md  relative text-lg px-10 m-10 gap-7 flex flex-col items-center justify-center h-[500px] lg:w-1/2 lg:text-xl">
 
-                    <div class="h-9  w-full bg-[#010421] absolute top-0  rounded-t-xl  flex justify-between ">
+                    <div class="h-9 w-full bg-[#010421] absolute top-0  rounded-t-xl  flex justify-between ">
                         <div class="flex justify-between items-center w-full px-5">
                             <div class="flex items-center gap-3">
                                 <div class="flex">
@@ -156,10 +171,10 @@
         </section>
 
         <section class="flex flex-col px-10 gap-4 bg-[var(--primary-color)] text-[var(--white-color)] py-20">
-            <h1 id="projetos"  class="text-4xl font-light">Projetos</h1>
+            <h1 id="projetos" class="text-4xl font-light">Projetos</h1>
             <div class="flex flex-col justify-center  lg:flex-row gap-10 text-[var(--white-color)] mt-10">
-          
-               <div class="  flex flex-col bg-[#010F22] rounded-xl p-4 gap-4 border border-[var(--white-color)]  px-8">
+
+                <div class="  flex flex-col bg-[#010F22] rounded-xl p-4 gap-4 border border-[var(--white-color)]  px-8">
                     <h1 class="text-xl font-bold">Nexboard Studio</h1>
                     <h2 class="text-sm">Editor de vídeos com avatar virtual</h2>
                     <img class=" bg-red-500" src="./images/image.png" alt="Imagem do projeto">
@@ -167,14 +182,14 @@
                     <div class="flex justify-between text-sm">
                         <div class="flex items-center justify-center gap-2 ">
                             <i class="fa-regular fa-calendar"></i>
-                           <p> Data de conclusão: 01/01/2023</p>
+                            <p> Data de conclusão: 01/01/2023</p>
                         </div>
                         <div class="flex items-center justify-center gap-2">
                             <i class="fa-solid fa-link"></i>
                             <p>Visualizar</p>
                         </div>
                     </div>
-               </div>
+                </div>
                 <div class=" flex flex-col bg-[#010F22] rounded-xl p-4 gap-4 border border-[var(--white-color)]  px-8">
                     <h1 class="text-xl font-bold">Forensics Module</h1>
                     <h2 class="text-sm">Sistema de identificação de pessoas</h2>
@@ -183,31 +198,31 @@
                     <div class="flex justify-between text-sm">
                         <div class="flex items-center justify-center gap-2 ">
                             <i class="fa-regular fa-calendar"></i>
-                           <p> Data de conclusão: 01/01/2023</p>
+                            <p> Data de conclusão: 01/01/2023</p>
                         </div>
                         <div class="flex items-center justify-center gap-2">
                             <i class="fa-solid fa-link"></i>
                             <p>Visualizar</p>
                         </div>
                     </div>
-               </div>
+                </div>
                 <div class=" flex flex-col bg-[#010F22] rounded-xl p-4 gap-4 border border-[var(--white-color)]  px-8">
                     <h1 class="text-xl font-bold">The Livery App</h1>
                     <h2 class="text-sm">Aplicativo de comida em Vitória da Conquista - BA</h2>
-                    <img  class=" bg-red-500" src="./images/image3.jpg">
+                    <img class=" bg-red-500" src="./images/image3.jpg">
                     <div class="h-px w-full bg-[#29292F] "></div>
                     <div class="flex justify-between text-sm">
                         <div class="flex items-center justify-center gap-2 ">
                             <i class="fa-regular fa-calendar"></i>
-                           <p> Data de conclusão: 01/01/2023</p>
+                            <p> Data de conclusão: 01/01/2023</p>
                         </div>
                         <div class="flex items-center justify-center gap-2">
                             <i class="fa-solid fa-link"></i>
                             <p>Visualizar</p>
                         </div>
                     </div>
-               </div>
-               
+                </div>
+
             </div>
             <h1 id="habilidades" class="text-4xl font-light mt-10">Habilidades</h1>
             <div class="flex flex-col lg:flex-row gap-4 text-[var(--white-color)] mt-10">
@@ -292,55 +307,64 @@
 
         <section id="fale-comigo" class="flex flex-col px-4 mt-4 justify-center items-center">
             <h1 class="text-4xl font-light">Fale comigo</h1>
-            <div
-                class="bg-[var(--primary-color)] text-[var(--white-color)] px-10 m-10 gap-7 flex rounded-2xl h-[600px] w-full lg:h-[400px] justify-center">
+            <div data-fale-comigo
+                class="bg-[var(--primary-color)] text-[var(--white-color)] px-10 m-10 gap-7 flex rounded-2xl h-[730px] w-full lg:h-[500px] justify-center">
 
-                <form class=" " action="/cadastro" method="POST" id="formCadastro">
-                    <div class="flex flex-col py-8 w-full  lg:grid lg:grid-cols-2 gap-4">
-                        <div>
+                <form data-form class=" w-full" action="/cadastro" method="POST" id="formCadastro">
+                    <div data-info class="flex flex-col lg:py-8 py-4  lg:grid lg:grid-cols-2 gap-1">
+                        <fieldset>
                             <label for="nome">Nome:</label>
-                            <input class="form_input" placeholder="Seu nome" type="text" id="nome" name="nome" required>
-                        </div>
-
-                        <div>
+                            <input minlength="3" class="form_input" placeholder="Seu nome" type="text" id="nome"
+                                name="nome" required>
+                            <span class="error-message"></span>
+                        </fieldset>
+                        <fieldset>
+                            <label for="cpf">CPF:</label>
+                            <input minlength="11" class="form_input" placeholder="Seu CPF" type="text" id="cpf"
+                                name="cpf" required>
+                            <span class="error-message"></span>
+                        </fieldset>
+                        <fieldset>
                             <label for="email">Email:</label>
-                            <input class="form_input" placeholder="Seu email" type="email" id="email" name="email"
-                                required>
-                        </div>
-
-                        <div>
+                            <input minlength="4" class="form_input" placeholder="Seu email" type="email" id="email"
+                                name="email" required>
+                            <span class="error-message"></span>
+                        </fieldset>
+                        <fieldset>
                             <label for="telefone">Telefone:</label>
-                            <input class="form_input" placeholder="(33) 9 9999-9999" type="text" id="telefone"
+                            <input class="form_input" placeholder="(33) 9 9999-9999" type="text" id="phone"
                                 name="telefone" min="0" max="9999999999" required>
-                        </div>
+                            <span class="error-message"></span>
 
-                        <div>
+                        </fieldset>
+                        <fieldset>
                             <label for="nascimento">Data de Nascimento:</label>
-                            <input class="form_input" placeholder="Sua data de nascimento" type="date"
-                                name="nascimento">
-                        </div>
-
-
-                        <div>
-                            <label for="foto">Anexos:</label>
-                            <input class="form_input" placeholder="Escolha uma foto" type="file" name="foto"
-                                accept="image/*">
-                        </div>
-
-
+                            <input required id="birthDate" class="form_input" placeholder="Sua data de nascimento"
+                                type="date" name="nascimento">
+                            <span class="error-message"></span>
+                        </fieldset>
                         <div class="flex items-center gap-4 mt-4">
                             <label class="text-lg" for="foto">Aceito os termos de uso:</label>
-                            <input placeholder="Aceito os termos de uso" type="radio">
+                            <input id="terms" required placeholder="Aceito os termos de uso" type="radio">
+                            <span class="error-message"></span>
                         </div>
-
+                    </div>
+                    <div class="flex flex-col items-center hidden" data-camera>
+                        <h1 class="text-xl my-4">Nos envie uma foto para validação dos dados:</h1>
+                        <video height="300" width="420" class="hidden mb-2" autoplay data-video id="video"></video>
+                        <img data-video-capture class="mb-8" width="300" src="./images/capture.png"></img>
                     </div>
                     <div class="flex justify-center gap-5 w-full">
-                        <button class="form_button w-1/2" type="submit">Cadastrar</button>
+
                         <button class="form_button w-1/2" type="reset">Limpar</button>
+                        <button data-button-form class="form_button w-1/2" type="submit">Continuar</button>
                     </div>
                 </form>
 
-
+                <div data-finalization class="hidden flex-col items-center justify-center">
+                    <p class="text-4xl w-3/4 text-center">Obrigado, seus dados foram enviados com sucesso e entraremos
+                        em contato!</p>
+                </div>
         </section>
 
 

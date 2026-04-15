@@ -4,12 +4,24 @@ html {
     scroll-behavior: smooth;
 }
 
-:root {
+body {
+    background-color: var(--body-color);
+}
+
+[data-theme="light"] {
     --primary-color: #12486B;
     --secondary-color: #419197;
     --tertiary-color: #78D6C6;
     --white-color: #F5FCCD;
+    --body-color: #FFFFFF;
+     color: #000000;
+}
 
+[data-theme="dark"] {
+    --primary-color: #000a1a;
+    --white-color: #F5FCCD;
+    --body-color: #000a1a;
+    color: #ffffff;
 }
 
 button {
@@ -58,4 +70,18 @@ input:focus-visible {
     padding: 10px 18px;
     font-size: 16px;
     border-radius: 4px;
+}
+
+.error-message {
+    color: red;
+    font-size: 16px;
+    display: block;
+    min-height: 20px;
+    margin-top: 4px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
