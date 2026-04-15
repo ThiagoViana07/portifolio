@@ -4,6 +4,8 @@ import verifyEmail from './verifyEmail.js';
 import verifyPhone from './verifyPhone.js';
 
 const switchComponent = document.getElementById('switch-component');
+const switchComponentMobile = document.getElementById('switch-component-mobile');
+
 const fieldsForms = document.querySelectorAll('[required]');
 
 
@@ -12,6 +14,15 @@ switchComponent.addEventListener('change', () => {
    document.documentElement.setAttribute('data-theme', newTheme);
 
 });
+
+
+switchComponentMobile.addEventListener('change', () => {
+   const newTheme = switchComponentMobile.checked ? 'dark' : 'light';
+   document.documentElement.setAttribute('data-theme', newTheme);
+
+});
+
+
 
 function fieldVerification(field) {
 
